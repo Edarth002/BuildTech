@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="shortcut icon" href="Images/Curve.png" type="image/x-icon">
+</head>
+
+<body class="bg-gradient-to-r from-blue-50 to-Cobaltblue">
+    <div class="pl-5 lg:pr-10 lg:py-5 flex justify-between lg:items-center items-start" id="nav">
+        <img src="./images/apple-touch-icon.png" alt="" class="lg:w-[4%] w-[10%] lg:py-0 py-5">
+        <img src="./Images/icon-menu.svg" alt="" class="lg:hidden flex p-10 w-32  cursor-pointer" id="openMenu">
+        <div class="lg:items-center lg:flex lg:flex-row flex-col hide space-x-11 transition_61 lg:relative lg:w-auto w-[75%] lg:bg-transparent lg:h-auto h-screen bg-white fixed p-5 lg:p-0 lg:right-auto right-0 lg:z-auto z-20"
+            id="Menu">
+            <img src="./Images/icon-close-menu.svg" alt="" class="lg:hidden flex mr-0 w-10 cursor-pointer"
+                id="closeMenu">
+            <a href="./index.html"
+                class="hover:font-semibold lg:text-base text-lg cursor-pointer lg:py-0 py-3 lg:ml-0 ml-10 lg:mt-0 mt-7">Home</a>
+            <a href="./about.html"
+                class="hover:font-semibold lg:text-base text-lg cursor-pointer lg:py-0 py-3">About</a>
+            <a href="./meetdevs.html" class="hover:font-semibold lg:text-base text-lg cursor-pointer lg:py-0 py-3">Meet
+                the Devs</a>
+            <a href="./contact.html"
+                class="hover:font-semibold lg:text-base text-lg cursor-pointer mr-10 lg:py-0 py-3">Contact Us</a>
+            <a href="./contact.html"
+                class="bg-black mx-auto lg:text-base text-lg text-white px-7 py-3 rounded-3xl hover:scale-110 cursor-pointer flex justify-center lg:my-0 my-5">Hire
+                Us</a>
+        </div>
+    </div>
+    <div class="md:px-10 px-5">
+        <form action=""
+            class="p-6 shadow-lg shadow-black ring ring-stone-500 mx-auto justify-center h-[29rem] mt-5 md:w-1/3 rounded-md">
+            <img src="./Images/Group of 2 Objectsd.png" alt="" class="w-28 h-14 mx-auto">
+            <p class="font-semibold mt-5">Name:</p>
+            <input type="text" class="w-full border border-stone-500 outline-none p-2 rounded-md my-1"
+                placeholder="Name" id="senderName">
+            <p class="font-semibold mt-1">Email:</p>
+            <input type="email" class="w-full border border-stone-500 outline-none p-2 rounded-md my-1"
+                placeholder="Email" id="reply_to">
+            <textarea name="message" id="message" cols="30" rows="3"
+                class="w-full border border-stone-500 outline-none p-2 rounded-md my-4"
+                placeholder="Type your message"></textarea>
+            <button type="submit" onclick="sendMail();"
+                class="bg-black mx-auto text-white px-7 py-3 rounded-3xl hover:scale-110 cursor-pointer flex justify-center w-full">Message</button>
+        </form>
+    </div>
+    <div class="p-10 flex-row flex justify-between items-center">
+        <div>
+            <h2 class="text-lg">Contact Us</h2>
+            <div class="h-1 w-7 bg-stone-800">
+
+            </div>
+            <div class="my-5 flex space-x-2 items-center">
+                <img src="./Images/g-mail.png" alt="" class="w-1/12">
+                <a href="mailto:contact@buildtechmata.com">contact@buildtechmata.com</a>
+            </div>
+            <div class="flex space-x-3 md:w-1/4 w-[55%] my-5 max-w-[20rem] min-w-[10rem]">
+                <a href="https://twitter.com/buildtechmata" class="w-1/3 hover:scale-110"><img src="./Images/teewt.png"
+                        alt=""></a>
+                <a href="https://instagram.com/buildtechmata?igshid=OGQ5ZDc2ODk2ZA==" class="w-1/3 hover:scale-110"><img
+                        src="./Images/dark insta.png" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100072068701070&mibextid=ZbWKwL"
+                    class="w-1/3 hover:scale-110"><img src="./Images/facebook.png" alt=""></a>
+            </div>
+        </div>
+        <div class=" mt-5 md:block hidden float-right justify-right">
+            <img src="./Images/apple-touch-icon.png" alt="" class=" w-1/2">
+        </div>
+
+    </div>
+    <div class="px-5 text-center">
+        <div class="bg-[rgb(40,40,40)] h-1 w-full mx-auto">
+
+        </div>
+        <p class="my-2">@ Build Tech Mata</p>
+        <p>Terms & Conditions | Privacy Policy</p>
+    </div>
+    <script defer src="./all.js"></script>
+</body>
+
+</html>

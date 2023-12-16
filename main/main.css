@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Rethink Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.transform_50 {
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+.transition_61 {
+    animation-name: rollin;
+    animation-duration: 1s;
+}
+
+@keyframes rollin {
+    from {
+        transform: translateX(20rem);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.section {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* @media (min-width: 1024px) {
+    .section {
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+} */
